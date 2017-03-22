@@ -20,16 +20,16 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = String(indexPath.row) + " " + list[ indexPath.row ]
+        cell.textLabel?.text = String(indexPath.row + 1) + " " + list[ indexPath.row ]
         return cell
     }
     
-    //    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        tableView.deselectRow(at: indexPath, animated: true)
-    //        let vc = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
-    //        self.present(vc, animated: true, completion: nil)
-    //        vc.toPass = list[indexPath.row]
-    //    }
+        public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            let vc = storyboard?.instantiateViewController(withIdentifier: "MusicViewController") as! MusicViewController
+            self.present(vc, animated: true, completion: nil)
+            vc.songName = list[indexPath.row]
+        }
     
     
     override func viewDidLoad() {

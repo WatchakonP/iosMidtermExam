@@ -10,12 +10,12 @@ import UIKit
 
 class MusicViewController: UIViewController {
 
-    
+    var songName = ""
     var password = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = songName
         // Do any additional setup after loading the view.
     }
 

@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="1884" y="446.62668665667172"/>
         </scene>
-        <!--View Controller-->
+        <!--MUSIC NAME-->
         <scene sceneID="CIm-yY-nLl">
             <objects>
-                <viewController id="9fp-io-JRz" sceneMemberID="viewController">
+                <viewController title="MUSIC NAME" id="9fp-io-JRz" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Jd-Vo-R2r"/>
                         <viewControllerLayoutGuide type="bottom" id="yJ3-WF-9aj"/>
@@ -166,12 +166,35 @@
                     <view key="view" contentMode="scaleToFill" id="vaC-w7-aJL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-cz-rWT">
+                                <rect key="frame" x="0.0" y="85" width="375" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="xb8-vM-2H5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LYRICS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-qN-4Kx">
+                                <rect key="frame" x="16" y="336" width="343" height="263"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ct6-qN-4Kx" firstAttribute="top" secondItem="hk4-cz-rWT" secondAttribute="bottom" constant="37" id="0fw-mT-kwO"/>
+                            <constraint firstAttribute="trailing" secondItem="hk4-cz-rWT" secondAttribute="trailing" id="CzV-dk-mNt"/>
+                            <constraint firstItem="hk4-cz-rWT" firstAttribute="leading" secondItem="vaC-w7-aJL" secondAttribute="leading" id="ELN-hn-cV1"/>
+                            <constraint firstItem="ct6-qN-4Kx" firstAttribute="leading" secondItem="vaC-w7-aJL" secondAttribute="leadingMargin" id="HLf-q8-Jc0"/>
+                            <constraint firstItem="ct6-qN-4Kx" firstAttribute="centerX" secondItem="hk4-cz-rWT" secondAttribute="centerX" id="TfA-cd-43E"/>
+                            <constraint firstItem="yJ3-WF-9aj" firstAttribute="top" secondItem="ct6-qN-4Kx" secondAttribute="bottom" constant="19" id="vpS-ai-6tE"/>
+                            <constraint firstItem="hk4-cz-rWT" firstAttribute="top" secondItem="7Jd-Vo-R2r" secondAttribute="bottom" constant="21" id="xx6-5v-cvP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36h-6W-1SO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2823" y="536"/>
+            <point key="canvasLocation" x="2821.5999999999999" y="535.68215892053979"/>
         </scene>
         <!--Music-->
         <scene sceneID="8AH-2S-6JD">
@@ -215,7 +238,7 @@
                             <constraint firstItem="zdJ-jZ-b4Q" firstAttribute="top" secondItem="tTB-Sa-5kx" secondAttribute="bottom" constant="8" symbolic="YES" id="jHe-5u-LzI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jiF-2K-oLk"/>
+                    <navigationItem key="navigationItem" title="Music" id="jiF-2K-oLk"/>
                     <connections>
                         <outlet property="tableView" destination="zdJ-jZ-b4Q" id="MJ9-M3-w8V"/>
                     </connections>
@@ -242,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="930" y="119"/>
         </scene>
-        <!--Item 1-->
+        <!--Music_NAME-->
         <scene sceneID="Xe9-BE-gYL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PXf-Sv-fMt" sceneMemberID="viewController">
+                <navigationController title="Music_NAME" automaticallyAdjustsScrollViewInsets="NO" id="PXf-Sv-fMt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="AVf-Wy-kvU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aqY-MP-xjb">
