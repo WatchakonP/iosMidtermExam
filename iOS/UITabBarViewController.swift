@@ -10,9 +10,11 @@ import UIKit
 
 class UITabBarViewController: UITabBarController {
 
-    var password = ""
+    var Password = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        let vc = storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+        vc.password = Password
 
         // Do any additional setup after loading the view.
     }
